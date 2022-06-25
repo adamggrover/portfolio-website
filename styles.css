@@ -226,8 +226,12 @@ a{
     
     #welcome-text{
         align-content: space-around;
-        height: auto;
+        height: fit-content;
         
+    }
+
+    .typing-text{
+        padding-right: 2rem;
     }
 
     .hi,.name{
