@@ -16,6 +16,7 @@ main{
     width: 100%;
     align-content: center;
     
+    
 }  
 
 
@@ -145,8 +146,8 @@ a{
 
 #projects-grid{
     display: grid;    
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-rows: 20rem 20rem;
+    grid-auto-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 20rem 20rem;
     grid-gap: 5rem;
     width: 100%;
     padding: 5rem;
@@ -218,7 +219,7 @@ a{
 
 /*Media queries*/
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
 
     #welcome-section{
         height: fit-content;
