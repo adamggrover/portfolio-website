@@ -218,10 +218,15 @@ a{
 
 /*Media queries*/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
+
+    #welcome-section{
+        height: fit-content;
+    }
     
     #welcome-text{
         align-content: space-around;
+        height: auto;
         
     }
 
