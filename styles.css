@@ -135,20 +135,15 @@ a{
 /*Projects Section*/
 
 #projects{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    
     padding-top: 5rem;
     padding-bottom: 10rem;
 }
 
-
-#projects-grid{
-    display: grid; 
-    grid-auto-rows: 30rem 30rem;
-    grid-gap: 5rem;
-    width: 100%;
+#project-grid{
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
     padding: 5rem;
 }
 
@@ -157,55 +152,53 @@ a{
     object-fit: cover; 
     object-position: top;    
     width:  100%;
-    height: 100%;  
-    opacity: 1; 
-    transition: .5s ease;
-    backface-visibility: hidden;
-     
+    height: 100%;   
 }
 
-.project-tile:hover .project-image {
-    opacity: 0.3;
-}
-  
-.project-tile:hover .middle {
-    opacity: 1;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-.project-title{
-    background-color: #ffffff;
-    padding: 1.2rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: -0.3rem; 
-    font-family: 'Inconsolata', monospace;
-    color: #2f2f2f;
-    
-}
 
 #project-heading{
     margin-top: 3rem;
     margin-bottom: 2rem;
+    text-align: center;
     
 }
 
 .project-tile{
-    display: flex;
-    flex-direction: column;
+    height: 20rem;
+    overflow-y: hidden;
+    position: relative;
     
     
 }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(243, 243, 243, 0.993);
+  }
+  
+  .project-tile:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 /*Contact Section*/
 
