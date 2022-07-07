@@ -181,7 +181,7 @@ a{
     width: 100%;
     opacity: 0;
     transition: 1s ease;
-    background-color: rgba(236, 235, 235, 0.993);
+    background-color: rgba(252, 252, 252, 0.993);
   }
   
   .project-tile:hover .overlay {
